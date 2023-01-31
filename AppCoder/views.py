@@ -9,7 +9,7 @@ def cursos(request):
     return HttpResponse(f"Se creo el curso {curso.nombre} ")
 
 def inicio(request):
-    return HttpResponse("Vista Inicio")
+    return render(request, "AppCoder/inicio.html")
 
 def profesores(request):
     return render(request, "AppCoder/profesores.html")
